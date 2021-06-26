@@ -55,6 +55,7 @@ CREATE TABLE public.verifacation_code_employers(
 	id INT NOT NULL,
 	employer_id INT NOT NULL,
 	CONSTRAINT pk_verifaction_code_employers PRIMARY KEY(id),
+	CONSTRAINT fk_verifaction_code_candidates_verifaction_codes FOREIGN KEY(id) REFERENCES public.verifacations_codes(id),
 	CONSTRAINT fk_verifaction_code_employers_employers FOREIGN KEY(employer_id) REFERENCES public.employers(id)
 );
 
