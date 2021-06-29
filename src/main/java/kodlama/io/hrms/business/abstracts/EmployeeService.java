@@ -4,10 +4,9 @@ import java.util.List;
 
 import kodlama.io.hrms.core.utilities.results.DataResult;
 import kodlama.io.hrms.core.utilities.results.Result;
-import kodlama.io.hrms.entities.concretes.JobTitle;
+import kodlama.io.hrms.entities.concretes.Employee;
 
-public interface JobTitleService {
-	Result add(JobTitle jobTitle);
-	DataResult<List<JobTitle>>getAll();
-
+public interface EmployeeService {
+	Result add(Employee employee);
+	DataResult<List<Employee>>getAll();
 }
